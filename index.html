@@ -66,6 +66,28 @@ h1 {
   }
 }
 </style>
+
+  <script>
+document.addEventListener("scroll", function() {
+  const sections = document.querySelectorAll("section");
+  sections.forEach(sec => {
+    const rect = sec.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      sec.style.opacity = "1";
+      sec.style.transform = "translateY(0)";
+    }
+  });
+});
+</script>
+
+<style>
+section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s;
+}
+</style>
+  
 </head>
 <body>
   <header>
@@ -105,6 +127,7 @@ h1 {
   </footer>
 </body>
 </html>
+
 
 
 
