@@ -179,6 +179,36 @@
       margin-top: 60px;
     }
     body.dark footer { background: #111; }
+    /* --- 運営者紹介カード --- */
+.owner-box {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background: rgba(255,255,255,0.85);
+  padding: 15px 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  width: 230px;
+  z-index: 2;
+  backdrop-filter: blur(4px);
+  color: #222;
+}
+
+/* ダークモード対応 */
+body.dark .owner-box {
+  background: rgba(20,20,20,0.85);
+  color: #eee;
+}
+
+/* 運営者のアイコン（任意） */
+.owner-box img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 10px auto;
+}
   </style>
 
   <script>
@@ -220,6 +250,14 @@
     <h1>自作PCの世界へようこそ</h1>
     <p>パーツ選びから組み立てまで、スタイリッシュに紹介！</p>
   </header>
+<div class="owner-box">
+  <img src="https://github.com/MARRUTINK/PCmade/blob/main/S__63889414_0.jpg?raw=true">
+  <h3 style="text-align:center; margin:8px 0 4px 0;">運営者：〇〇</h3>
+  <p style="font-size:0.9em; text-align:center;">
+    自作PCとガジェットが好きな学生。<br>
+    組み立て歴3年。
+  </p>
+</div>
 
   <nav>
     <a href="#about">自作PCとは</a>
@@ -286,5 +324,6 @@
 
 </body>
 </html>
+
 
 
