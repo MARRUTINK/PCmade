@@ -147,6 +147,26 @@
       66% { transform: translateX(-200%); }
       100% { transform: translateX(0); }
     }
+    /* --- ダークモード用のセクション背景と文字色 --- */
+body.dark section {
+  background: rgba(30, 30, 30, 0.9);
+  color: #f5f5f5;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+body.dark h2 {
+  color: #9ad4ff;
+  border-left-color: #9ad4ff;
+}
+
+body.dark nav {
+  background: rgba(10, 20, 25, 0.95);
+}
+
+body.dark footer {
+  background: #111;
+  color: #ddd;
+}
 
 </style>
   <script>
@@ -224,3 +244,4 @@
   </script>
 </body>
 </html>
+
